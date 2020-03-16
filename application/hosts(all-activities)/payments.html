@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Damier Spaces - Enjoy frictionless daily access to the best workspaces near you!">
+  <meta name="author" content="Nativebrands">
+  <title>Attendance - Damier Spaces</title>
+  <!-- Assets -->
+  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/css/damier.css" id="stylesheet">
+  <link rel="stylesheet" href="../../assets/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css" id="stylesheet">
+</head>
+
+<body class="application application-offset">
+
+  <!-- Application container -->
+  <div class="container-fluid container-application">
+    <!-- Sidenav -->
+    <div class="sidenav" id="sidenav-main">
+      <!-- Sidenav header -->
+      <div class="sidenav-header d-flex align-items-center">
+        <a class="navbar-brand" href="../hosts(all-activities)/dashboard.html">
+          <img src="../../assets/img/brand/white.png" class="navbar-brand-img" alt="...">
+        </a>
+        <div class="ml-auto">
+          <!-- Sidenav toggler -->
+          <div class="sidenav-toggler sidenav-toggler-dark d-md-none" data-action="sidenav-unpin" data-target="#sidenav-main">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- User mini profile -->
+      <div class="sidenav-user d-flex flex-column align-items-center justify-content-between text-center">
+        <!-- Avatar -->
+        <div>
+          <a href="#" class="avatar rounded-circle avatar-xl">
+            <img alt="Image placeholder" src="../../assets/img/workstation-NG.png" class="">
+          </a>
+          <div class="mt-4">
+            <h5 class="mb-0 text-white">Workstation NG</h5>
+            <span class="d-block text-sm text-white opacity-8 mb-3">200 Spaces</span>
+            <a href="my-locations.html" class="btn btn-sm btn-white btn-icon rounded-pill shadow hover-translate-y-n3">
+              <span class="btn-inner--icon btn-outline-primary"><i class="fas fa-map-marker-alt"></i></span>
+              <span class="btn-inner--text btn-outline-primary">20 Locations</span>
+            </a>
+          </div>
+        </div>
+        <!-- User info -->
+        <!-- Actions -->
+        <div class="user-side-info">
+         <div class="row">
+          <div class="col">
+
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Application nav -->
+    <div class="nav-application clearfix">
+      <a href="../hosts(all-activities)/dashboard.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fa fa-home fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Dashboard</span>
+      </a>
+      <a href="../hosts(all-activities)/attendance.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-calendar-check fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Attendance</span>
+      </a>
+
+      <a href="../hosts(all-activities)/my-spaces.html" class="btn btn-square text-sm ">
+        <span class="btn-inner--icon d-block"><i class="fas fa-couch fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">My Spaces</span>
+      </a>
+      <a href="../hosts(all-activities)/my-locations.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-map-signs fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">My Locations</span>
+      </a>
+      <a href="../hosts(all-activities)/reviews.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-star fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Reviews</span>
+      </a>
+      <a href="../hosts(all-activities)/reports.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-list fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Reports</span>
+      </a>
+      <a href="../hosts(all-activities)/payments.html" class="btn btn-square text-sm active">
+        <span class="btn-inner--icon d-block"><i class="fas fa-wallet fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Payments</span>
+      </a>
+
+      <a href="../hosts(all-activities)/settings.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-cogs fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Settings</span>
+      </a>
+      <a href="../../../damier-spaces-website/pages/users-hosts/login.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-sign-out-alt fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Logout</span>
+      </a>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="main-content position-relative">
+    <!-- Main nav -->
+    <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-primary navbar-border" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand + Toggler (for mobile devices) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- User's navbar -->
+        <div class="navbar-user d-lg-none ml-auto">
+          <ul class="navbar-nav flex-row align-items-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="fa fa-bars"></i></a>
+            </li>
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg dropdown-menu-arrow  mobile-drop p-0">
+                <div class="py-3 px-3">
+                  <h5 class="heading h6 mb-0">Notifications</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Venia just opened a new working at. 2 shomolu street...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-check-circle"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">Damier spaces <small class="float-right text-muted">3 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          You have successfully upgraded your package to FlexiHIGH
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">BTHub<small class="float-right text-muted">5 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          BTHub just opened a new working  at No. 2 shomolu street...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                      <div>
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-exclamation-circle"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Your reservation for a space at VeniaHUB Yaba has been declined
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                      <div>
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">Damier Spaces <small class="float-right text-muted">3 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Your check-in request has been accepted at Ogba
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="py-3 text-center">
+                  <a href="../hosts(all-activities)/notification.html" class="link link-sm link--style-3">View all notifications</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link pr-lg-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="../../assets/img/workstation-NG.png">
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow mobile-drop">
+                <h6 class="dropdown-header px-0">Workstation NG</h6>
+                <a href="../hosts(all-activities)/settings.html" class="dropdown-item">
+                  <i class="fa fa-user"></i>
+                  <span>My profile</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="../../../damier-spaces-website/pages/users-hosts/login.html" class="dropdown-item">
+                  <i class="fa fa-sign-out-alt"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Navbar nav -->
+        <div class="collapse navbar-collapse navbar-collapse-fade" id="navbar-main-collapse">
+          <ul class="navbar-nav align-items-lg-center">
+            <!-- Overview  -->
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(all-activities)/dashboard.html"> Dashboard </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(all-activities)/attendance.html">Attendance </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(all-activities)/my-spaces.html">My Spaces </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(all-activities)/my-locations.html">My Locations</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(all-activities)/reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(all-activities)/reports.html">Reports</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(all-activities)/payments.html">Payments</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(all-activities)/settings.html">Settings</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../../../damier-spaces-website/pages/users-hosts/login.html">Logout</a>
+            </li>
+            <li class="border-top opacity-2 my-2"></li>
+          </ul><!-- Right menu -->
+          <ul class="navbar-nav ml-lg-auto align-items-center d-none d-lg-flex">
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="fa fa-bars"></i></a>
+            </li>
+            
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg dropdown-menu-arrow p-0">
+                <div class="py-3 px-3">
+                  <h5 class="heading h6 mb-0">Notifications</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Venia just opened a new working at. 2 shomolu street...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-check-circle"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">Damier spaces <small class="float-right text-muted">3 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          You have successfully upgraded your package to FlexiHIGH
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">BTHub<small class="float-right text-muted">5 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          BTHub just opened a new working  at No. 2 shomolu street...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                      <div>
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-exclamation-circle"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Your reservation for a space at VeniaHUB Yaba has been declined
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                      <div>
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">Damier Spaces <small class="float-right text-muted">3 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Your check-in request has been accepted at Ogba
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="py-3 text-center">
+                  <a href="../hosts(all-activities)/notification.html" class="link link-sm link--style-3">View all notifications</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link pr-lg-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media media-pill align-items-center">
+                  <span class="avatar rounded-circle">
+                    <img alt="Image placeholder" src="../../assets/img/workstation-NG.png">
+                  </span>
+                  <div class="ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">Workstation NG</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow">
+                <h6 class="dropdown-header px-0">Workstation NG</h6>
+                <a href="../hosts(all-activities)/settings.html" class="dropdown-item">
+                  <i class="fa fa-user"></i>
+                  <span>My profile</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="../../../damier-spaces-website/pages/users-hosts/login.html" class="dropdown-item">
+                  <i class="fa fa-sign-out-alt"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Omnisearch -->
+
+    <!-- Page content -->
+    <div class="page-content">
+      <div class="page-title">
+        <div class="row justify-content-between align-items-center">
+          <div class="d-inline-block">
+            <h5 class="h4 d-inline-block font-weight-400 mb-0 text-white">Payment</h5>
+            <p class="text-white"><small>Manage all your sales and payments here.</small></p>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-12">
+          <!-- Page Component -->
+
+          <div class="card sales-payments">
+            <div class="card-body">
+              <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Payments</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="default-tab">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                  <div class="row" id="selectdates">
+                    <div class="col-lg-12 mb-3">
+                      <form class="form-inline">
+                        <div class="input-group mb-2 mr-sm-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
+                          </div>
+                          <input type="text" class="form-control" id="date" placeholder="Date From:">
+                        </div>
+
+                        <div class="input-group mb-2 mr-sm-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
+                          </div>
+                          <input type="text" class="form-control" id="date2" placeholder="Date To:">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mb-2">Go</button>
+                      </form>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+
+                  <div class="row location-selection">
+                    <div class="col-lg-7">
+                      <div class="row">
+                        <div class="col">
+                          <select name="" id="input" class="form-control" required="required">
+                            <option value="">Location</option>
+                            <option value="">Maryland Mall</option>
+                            <option value="">Head Office</option>
+                            <option value="">Annex Office</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <select name="" id="today" class="form-control" required="required">
+                            <option value="">Space</option>
+                            <option value="">Dedicated Desk</option>
+                            <option value="">Meeting Room</option>
+                            <option value="">Conference Hall</option>
+                          </select>
+                        </div>
+                        <div class="col" id="7days">
+                          <select name="" id="input" class="form-control" required="required">
+                            <option value="">Day</option>
+                            <option value="">22/01/2020</option>
+                            <option value="">22/02/2020</option>
+                            <option value="">22/03/2020</option>
+                            <option value="">22/04/2020</option>
+                            <option value="">22/05/2020</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 text-right">
+                      <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-secondary active today">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked> Today
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input class="7days" type="radio" name="options" id="option3" autocomplete="off"> 7 Days
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input class="30days" type="radio" name="options" id="option4" autocomplete="off"> 30 Days
+                        </label>
+                        <label class="btn btn-secondary customdays">
+                          <input type="radio" name="options" id="option5" autocomplete="off"> Custom
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row mt-5">
+                    <div class="col">
+
+                      <div class="timeline timeline-one-side" data-timeline-content="axis" data-timeline-axis-style="dashed">
+                        <div class="timeline-block">
+                          <span class="timeline-step">1
+                          </span>
+                          <div class="timeline-content">
+                            <small class="text-muted font-weight-bold">10:30 AM - 11:30 AM</small>
+                            <h5 class="h6 ">Bosun Jones (bosunjonesmuyiwa@gmail.com)</h5>
+                            <ul>
+                              <li><span class="damier-color">Checked-In at:</span> Mar 07, 2020 8:10 PM</li>
+                              <li><span class="damier-color">Checked-Out at:</span> Mar 07, 2020 8:10 PM</li>
+                              <li><span class="damier-color">Time Used:</span> Mar 07, 2020 8:10 PM</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="timeline-block">
+                          <span class="timeline-step">2
+                          </span>
+                          <div class="timeline-content">
+                            <small class="text-muted font-weight-bold">10:30 AM - 11:30 AM</small>
+                            <h5 class="h6 ">Bosun Jones (bosunjonesmuyiwa@gmail.com)</h5>
+                            <ul>
+                              <li><span class="damier-color">Checked-In at:</span> Mar 07, 2020 8:10 PM</li>
+                              <li><span class="damier-color">Checked-Out at:</span> Mar 07, 2020 8:10 PM</li>
+                              <li><span class="damier-color">Time Used:</span> Mar 07, 2020 8:10 PM</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="timeline-block">
+                          <span class="timeline-step">3
+                          </span>
+                          <div class="timeline-content">
+                            <small class="text-muted font-weight-bold">10:30 AM - 11:30 AM</small>
+                            <h5 class="h6 ">Bosun Jones (bosunjonesmuyiwa@gmail.com)</h5>
+                            <ul>
+                              <li><span class="damier-color">Checked-In at:</span> Mar 07, 2020 8:10 PM</li>
+                              <li><span class="damier-color">Checked-Out at:</span> Mar 07, 2020 8:10 PM</li>
+                              <li><span class="damier-color">Time Used:</span> Mar 07, 2020 8:10 PM</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                  <ul class="nav nav-tabs nav-justified mt-5 nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="request-tab" data-toggle="tab" href="#make-request" role="tab" aria-controls="make-request" aria-selected="true">Make Requests</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="payment-tab" data-toggle="tab" href="#payment-request" role="tab" aria-controls="payment-request" aria-selected="false">Payment Requests</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed-payments" role="tab" aria-controls="completed-payments" aria-selected="false">Completed Payments</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="make-request" role="tabpanel" aria-labelledby="request-tab">
+                      <div class="mt-4">
+                        <div class="row host mb-5 mt-5">
+                          <h5>Make Payment Requests</h5>
+                        </div>
+                        <form action="">
+                          <div class="form-group">
+                            <label class="form-control-label">
+                              Enter Amount:
+                            </label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label class="form-control-label mb-0">
+                              Enter Comments (Optional):
+                            </label>
+                            <textarea name="" id="input" class="form-control" rows="3" required="required"></textarea>
+                          </div>
+                          <button class="btn w-100 btn-fill">Submit Request</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="payment-request" role="tabpanel" aria-labelledby="payment-tab">
+                      <div class="mt-4">
+                        <div class="row host mb-5 mt-5">
+                          <h5>Payment Requests</h5>
+                        </div>
+                        
+                        <table class="table table-hover table-inverse table-responsive">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>AMOUNT</th>
+                              <th>COMMENTS</th>
+                              <th>DATE REQUESTED</th>
+                              <th>STATUS</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>N50,000</td>
+                              <td>Ooin, send our money for this week.</td>
+                              <td>Mar 07, 2020 8:10 PM</td>
+                              <td><span class="badge badge-danger">Processing</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="completed-payments" role="tabpanel" aria-labelledby="completed-tab">
+                      <div class="mt-4">
+                        <div class="row host mb-5 mt-5">
+                          <h5>Completed Payments</h5>
+                        </div>
+                        
+                        <table class="table table-hover table-inverse table-responsive">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>AMOUNT</th>
+                              <th>COMMENTS</th>
+                              <th>DATE REQUESTED</th>
+                              <th>STATUS</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>N50,000</td>
+                              <td>Ooin, send our money for this week.</td>
+                              <td>Mar 07, 2020 8:10 PM</td>
+                              <td><span class="badge badge-success">Completed</span></td>
+                              <td>
+                                <a href="#" class="action-item mr-2" data-toggle="tooltip" title="Download Receipt">
+                                  <i class="fa fa-download"></i>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Page Component -->
+
+      <!-- Footer -->
+      <div class="footer pt-5 pb-4 footer-light" id="footer-main">
+        <div class="row text-center text-sm-left align-items-sm-center">
+          <div class="col-sm-6">
+            <p class="text-sm mb-0">&copy; 2020 <a href="https://damierspaces.com/" class="h6 text-sm" target="_blank">Damier Spaces</a>. All rights reserved.</p>
+          </div>
+          <div class="col-sm-6 mb-md-0">
+            <ul class="nav justify-content-center justify-content-md-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pr-0" href="#">Privacy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal--->
+  <div class="modal fade" id="modal-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Extend Reservation Time </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class=" text-center extend">
+            <i class="fas fa-check-circle fa-3x"></i>
+            <p>The time will be extended for the user by <strong>(10 minutes)</strong>.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+    </div
+    ><!-- /.modal -->
+    <!--/Modal-->
+
+    <!-- Scripts -->
+    <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+    <script src="../../assets/js/damier.core.js"></script>
+    <!-- Damier JS -->
+    <script src="../../assets/js/damier.js"></script>
+    <script src="../../assets/js/feathericons.js"></script>
+    <script src="../../assets/js/sweetalert.js"></script>
+    <script src="../../assets/js/damier-spaces.js"></script>
+    <script src="../../assets/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+    <script>
+      document.querySelector('.notification').onclick = function(){
+        swal("Action Done!", "All notifications has been marked as read.", "success");
+      };
+    </script>
+
+    <script>
+      $('#7days, #selectdates').hide();
+
+      $('.7days, .30days').change(function() {
+        if ($(this).is(':checked')) {
+          $('#7days').show();
+          $('#selectdates').hide();
+        }else {
+          $('#7days').hide();
+        }
+      });
+
+      $('.customdays').click(function() {
+        $('#selectdates').show();
+      });
+
+      $('.today').click(function() {
+        $('#7days, #selectdates').hide();
+      });
+
+      // Datepicker
+      $('#date, #date2').datepicker({
+
+      });
+    </script>
+  </body>
+
+  </html>

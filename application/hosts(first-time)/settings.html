@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Damier Spaces - Enjoy frictionless daily access to the best workspaces near you!">
+  <meta name="author" content="Nativebrands">
+  <title>Settings- Damier Spaces</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="../../assets/fontawesome5/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/libs/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/libs/select2/dist/css/select2.min.css">
+  <!-- Damier Spaces Stylesheet -->
+  <link rel="stylesheet" href="../../assets/css/style.css" id="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/damier.css" id="stylesheet">
+</head>
+
+<body class="application application-offset">
+
+  <!-- Application container -->
+  <div class="container-fluid container-application">
+    <!-- Sidenav -->
+    <div class="sidenav" id="sidenav-main">
+      <!-- Sidenav header -->
+      <div class="sidenav-header d-flex align-items-center">
+        <a class="navbar-brand" href="../hosts(location-added)/dashboard.html">
+          <img src="../../assets/img/brand/white.png" class="navbar-brand-img" alt="...">
+        </a>
+        <div class="ml-auto">
+          <!-- Sidenav toggler -->
+          <div class="sidenav-toggler sidenav-toggler-dark d-md-none" data-action="sidenav-unpin" data-target="#sidenav-main">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- User mini profile -->
+      <div class="sidenav-user d-flex flex-column align-items-center justify-content-between text-center">
+        <!-- Avatar -->
+        <div>
+          <a href="#" class="avatar rounded-circle avatar-xl">
+            <img alt="Image placeholder" src="../../assets/img/workstation-NG.png" class="">
+          </a>
+          <div class="mt-4">
+            <h5 class="mb-0 text-white">Workstation NG</h5>
+            <span class="d-block text-sm text-white opacity-8 mb-3">200 Spaces</span>
+            <a href="#" class="btn btn-sm btn-white btn-icon rounded-pill shadow hover-translate-y-n3">
+              <span class="btn-inner--icon btn-outline-primary"><i class="fas fa-map-marker-alt"></i></span>
+              <span class="btn-inner--text btn-outline-primary">20 Locations</span>
+            </a>
+          </div>
+        </div>
+        <!-- User info -->
+        <!-- Actions -->
+        <div class="user-side-info">
+         <div class="row">
+          <div class="col">
+
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Application nav -->
+    <div class="nav-application clearfix">
+      <a href="../hosts(location-added)/dashboard.html" class="btn btn-square text-sm ">
+        <span class="btn-inner--icon d-block"><i class="fa fa-home fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Dashboard</span>
+      </a>
+      <a href="../hosts(location-added)/attendance.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-calendar-check fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Attendance</span>
+      </a>
+
+      <a href="../hosts(location-added)/my-spaces.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-couch fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">My Spaces</span>
+      </a>
+      <a href="../hosts(location-added)/my-locations.html" class="btn btn-square text-sm active">
+        <span class="btn-inner--icon d-block"><i class="fas fa-map-signs fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">My Locations</span>
+      </a>
+      <a href="../hosts(location-added)/reviews.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-star fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Reviews</span>
+      </a>
+      <a href="../hosts(location-added)/reports.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-list fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Reports</span>
+      </a>
+      <a href="../hosts(location-added)/payments.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-wallet fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Payments</span>
+      </a>
+
+      <a href="../hosts(location-added)/settings.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-cogs fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Settings</span>
+      </a>
+      <a href="../hosts(location-added)/login.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-sign-out-alt fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Logout</span>
+      </a>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="main-content position-relative">
+    <!-- Main nav -->
+    <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-primary navbar-border" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand + Toggler (for mobile devices) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- User's navbar -->
+        <div class="navbar-user d-lg-none ml-auto">
+          <ul class="navbar-nav flex-row align-items-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="fa fa-bars"></i></a>
+            </li>
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg dropdown-menu-arrow  mobile-drop p-0">
+                <div class="py-3 px-3">
+                  <h5 class="heading h6 mb-0">Notifications</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Venia just opened a new working at. 2 shomolu street...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-check-circle"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">Damier spaces <small class="float-right text-muted">3 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          You have successfully upgraded your package to FlexiHIGH
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">BTHub<small class="float-right text-muted">5 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          BTHub just opened a new working  at No. 2 shomolu street...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                      <div>
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-exclamation-circle"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Your reservation for a space at VeniaHUB Yaba has been declined
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                      <div>
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">Damier Spaces <small class="float-right text-muted">3 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Your check-in request has been accepted at Ogba
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="py-3 text-center">
+                  <a href="../users/notification.html" class="link link-sm link--style-3">View all notifications</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link pr-lg-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="../../assets/img/workstation-NG.jpg">
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow mobile-drop">
+                <h6 class="dropdown-header px-0">Workstation NG</h6>
+                <a href="../users/profile.html" class="dropdown-item">
+                  <i class="fa fa-user"></i>
+                  <span>My profile</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="../users/login.html" class="dropdown-item">
+                  <i class="fa fa-sign-out-alt"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Navbar nav -->
+        <div class="collapse navbar-collapse navbar-collapse-fade" id="navbar-main-collapse">
+          <ul class="navbar-nav align-items-lg-center">
+            <!-- Overview  -->
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(location-added)/dashboard.html"> Dashboard </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(location-added)/attendance.html">Attendance </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(location-added)/my-spaces.html">My Spaces </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(location-added)/my-locations.html">My Locations</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(location-added)/reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(location-added)/reports.html">Reports</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(location-added)/payments.html">Payments</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(location-added)/settings.html">Settings</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../hosts(location-added)/login.html">Logout</a>
+            </li>
+            <li class="border-top opacity-2 my-2"></li>
+          </ul><!-- Right menu -->
+          <ul class="navbar-nav ml-lg-auto align-items-center d-none d-lg-flex">
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="fa fa-bars"></i></a>
+            </li>
+
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg dropdown-menu-arrow p-0">
+                <div class="py-3 px-3">
+                  <h5 class="heading h6 mb-0">Notifications</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Venia just opened a new working at. 2 shomolu street...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-check-circle"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">Damier spaces <small class="float-right text-muted">3 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          You have successfully upgraded your package to FlexiHIGH
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago">
+                      <div> 
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">BTHub<small class="float-right text-muted">5 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          BTHub just opened a new working  at No. 2 shomolu street...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                      <div>
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-exclamation-circle"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Your reservation for a space at VeniaHUB Yaba has been declined
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                      <div>
+                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
+                      </div>
+                      <div class="flex-fill ml-3">
+                        <div class="h6 text-sm mb-0">Damier Spaces <small class="float-right text-muted">3 hrs ago</small></div>
+                        <p class="text-sm lh-140 mb-0">
+                          Your check-in request has been accepted at Ogba
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="py-3 text-center">
+                  <a href="../users/notifications.html" class="link link-sm link--style-3">View all notifications</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link pr-lg-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media media-pill align-items-center">
+                  <span class="avatar rounded-circle">
+                    <img alt="Image placeholder" src="../../assets/img/workstation-NG.png">
+                  </span>
+                  <div class="ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">Workstation NG</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow">
+                <h6 class="dropdown-header px-0">Workstation NG</h6>
+                <a href="../users/profile.html" class="dropdown-item">
+                  <i class="fa fa-user"></i>
+                  <span>My profile</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="../users/login.html" class="dropdown-item">
+                  <i class="fa fa-sign-out-alt"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Omnisearch -->
+
+    <!-- Page content -->
+    <div class="page-content">
+      <!-- Page title -->
+      <div class="page-title">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-6 d-flex align-items-center justify-content-between justify-content-md-start mb-3 mb-md-0">
+            <!-- Page title + Go Back button -->
+            <div class="d-inline-block">
+              <h5 class="h4 d-inline-block font-weight-400 mb-0 text-white">Settings</h5>
+              <p class="text-white"><small>Update your settings and bank details here.</small></p>
+            </div>
+            <!-- Additional info -->
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-between justify-content-md-end">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-10 order-lg-1">
+          <!-- Page Component -->
+
+          <div class="card">
+            <div class="card-body">
+             <!-- Tabs -->
+             <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Main Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Bank Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Security</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="default-tab">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row host">
+                  <h5>Host Details</h5>
+                </div>
+                <div class="mt-4">
+                  <form action="">
+                    <div class="form-group">
+                      <label class="form-control-label">
+                        Host Name:
+                      </label>
+                      <input type="text" class="form-control" placeholder="e.g: Workstation NG">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label mb-0">
+                        Description
+                      </label>
+                      <textarea class="form-control" aria-label="Brief Description of about your company." placeholder="Brief Description of about your company."></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label mb-0">
+                        Email Address:
+                      </label>
+                      <input type="text" class="form-control" placeholder="e.g: company@email.com">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label mb-0">
+                        Phone Number:
+                      </label>
+                      <input type="text" class="form-control" placeholder="e.g: +2348098765432">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label mb-0">
+                        Main Address:
+                      </label>
+                      <input type="text" class="form-control" placeholder="e.g: 123, Lagos Street, Lagos, Nigeria">
+                    </div>
+                  </form>
+                </div>
+                <div class="row host">
+                  <h5>Contact Person</h5>
+                </div>
+                <div class="mt-4">
+                  <form action="">
+                    <div class="form-group">
+                      <label class="form-control-label">
+                        Host Name:
+                      </label>
+                      <input type="text" class="form-control" placeholder="e.g: Bosun Jones">
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <!-- Email Adress-->
+                          <div class="form-group">
+                            <label class="form-control-label">
+                              Email Address:
+                            </label>
+                            <input type="text" class="form-control" placeholder="name@email.com">
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <!-- Phone Number -->
+                          <div class="form-group">
+                            <label class="form-control-label">
+                              Phone Number:
+                            </label>
+                            <input type="text" class="form-control" placeholder="e.g: +2348098765432">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="damier-btn-fill">Save Changes</button>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="mt-4">
+                  <form action="">
+                    <div class="form-group">
+                      <label class="form-control-label">
+                        Bank Name
+                      </label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label mb-0">
+                        Account Name
+                      </label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label mb-0">
+                        Account Number
+                      </label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <button class="damier-btn-fill">Save Changes</button>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="mt-4">
+                  <form action="">
+                    <div class="form-group">
+                      <label class="form-control-label">
+                        Current Password
+                      </label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label mb-0">
+                        New Password
+                      </label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label mb-0">
+                        Re-type New Password
+                      </label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <button class="damier-btn-fill">Save Changes</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /Page Component -->
+
+
+    <!-- Footer -->
+    <div class="footer pt-5 pb-4 footer-light" id="footer-main">
+      <div class="row text-center text-sm-left align-items-sm-center">
+        <div class="col-sm-6">
+          <p class="text-sm mb-0">&copy; 2020 <a href="https://damierspaces.com/" class="h6 text-sm" target="_blank">Damier Spaces</a>. All rights reserved.</p>
+        </div>
+        <div class="col-sm-6 mb-md-0">
+          <ul class="nav justify-content-center justify-content-md-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-0" href="#">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Scripts -->
+<!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+<script src="../../assets/js/damier.core.js"></script>
+<!-- Page JS -->
+<script src="../../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+<script src="../../assets/libs/select2/dist/js/select2.min.js"></script>
+<script src="../../assets/libs/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+<!-- Damier JS -->
+<script src="../../assets/js/damier.js"></script>
+</body>
+
+</html>
