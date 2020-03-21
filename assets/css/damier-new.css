@@ -690,12 +690,6 @@ SPACE AMENITIES
 	cursor: pointer;
 }
 
-/**/
-.hidden{
-	display: none;
-}
-
-
 .sales-payments [data-toggle=buttons]:not(.btn-group-colors)>.btn,
 .reports-page [data-toggle=buttons]:not(.btn-group-colors)>.btn{
 	padding: 15px;
