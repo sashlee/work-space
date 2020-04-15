@@ -79,7 +79,13 @@ ul{
 	color: #850901;
 }
 
-
+.damier-light-bugundy{
+	background-color: #E6DAD9 !important;
+	border-radius: 8px;
+}
+.damier-dark{
+	color: #444!important;
+}
 /********************
 DASHBOARD
 ********************/
@@ -721,4 +727,11 @@ SPACE AMENITIES
 
 .reports-page select{
 	font-size: 13px;
+}
+/*settings*/
+.settings{
+	border-radius: 4px;
+	border:2px dashed #777;
+	text-align: center;
+	padding: 25px;
 }
