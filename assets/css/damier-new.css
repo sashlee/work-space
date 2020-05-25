@@ -78,7 +78,9 @@ ul{
 .damier-color{
 	color: #850901;
 }
-
+.damier-bugundy{
+	background-color: #EDDAD9 !important;
+}
 .damier-light-bugundy{
 	background-color: #E6DAD9 !important;
 	border-radius: 8px;
@@ -734,4 +736,66 @@ SPACE AMENITIES
 	border:2px dashed #777;
 	text-align: center;
 	padding: 25px;
+}
+
+.team-lead{
+	float: right;
+	right: 5%;
+	position: absolute;
+}
+/*manage slots*/
+.input-number{
+  
+    width: 50px !important;
+    text-align: center!important;
+    font-weight: bold!important;
+    font-size: 20px!important;
+    height: 40px!important;
+    border: solid 2px #222!important;
+    box-shadow: none!important;
+    position:relative;
+    color: #222;
+}
+.input-container{
+    position: relative;
+    height: 40px;
+    display: block; 
+    margin: 0 15px;
+}
+.input-container:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 10px;
+    background-color: #ccc!important;
+    z-index:10;
+}
+.input-container:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 10px;
+    background-color: #ccc!important;
+    z-index:10;
+}
+.btn-number{
+    border-radius: 50%!important;
+    background-color: #222!important;
+    color: #fff!important;
+    outline: none!important;
+    font-size: 18px!important;
+    padding: 0px!important;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    
+}
+.incrementor{
+	width: 150px;
+	margin:40px auto;
 }

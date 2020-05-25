@@ -26,6 +26,3 @@ $(function() {
 	};
 });
 
-$(function() {
-	feather.replace();
-});

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Damier Spaces - Enjoy frictionless daily access to the best workspaces near you!">
+  <meta name="author" content="Nativebrands">
+  <title>Single Space - Damier Spaces</title>
+  <!-- Assets -->
+  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/css/damier.css" id="stylesheet">
+</head>
+
+<body class="application application-offset">
+
+  <!-- Application container -->
+  <div class="container-fluid container-application">
+    <!-- Sidenav -->
+    <div class="sidenav" id="sidenav-main">
+      <!-- Sidenav header -->
+      <div class="sidenav-header d-flex align-items-center">
+        <a class="navbar-brand" href="../single-team(active)/dashboard.html">
+          <img src="../../assets/img/brand/white.png" class="navbar-brand-img" alt="...">
+        </a>
+        <div class="ml-auto">
+          <!-- Sidenav toggler -->
+          <div class="sidenav-toggler sidenav-toggler-dark d-md-none" data-action="sidenav-unpin" data-target="#sidenav-main">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- User mini profile -->
+      <div class="sidenav-user d-flex flex-column align-items-center justify-content-between text-center">
+        <!-- Avatar -->
+        <div>
+          <a href="#" class="avatar rounded-circle avatar-xl">
+            <img alt="Image placeholder" src="../../assets/img/web-dev.png" class="">
+          </a>
+          <div class="mt-4">
+            <h5 class="mb-0 text-white">Bosun Jones</h5>
+            <span class="d-block text-sm text-white opacity-8 mb-3">Web Developer</span>
+            <a href="my-team.html" class="btn btn-sm btn-white btn-icon rounded-pill shadow hover-translate-y-n3">
+              <span class="btn-inner--icon"><i class="fas fa-users"></i></span>
+              <span class="btn-inner--text">Team: Acme Team</span>
+            </a>
+          </div>
+        </div>
+        <!-- User info -->
+        <!-- Actions -->
+        <div class="user-side-info">
+         <div class="row">
+          <div class="col-12">
+            <ul>
+              <li>
+                <span>Slots left</span>
+              </li>
+              <li>
+                <small>0</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Application nav -->
+    <div class="nav-application clearfix">
+      <a href="../single-team(active)/dashboard.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fa fa-home fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Dashboard</span>
+      </a>
+      <a href="../single-team(active)/my-team.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-users fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">My Team</span>
+      </a>
+      <a href="../single-team(active)/spaces.html" class="btn btn-square text-sm active">
+        <span class="btn-inner--icon d-block"><i class="fas fa-couch fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Spaces</span>
+      </a>
+      <a href="../single-team(active)/history.html" class="btn btn-square text-sm">
+        <span class="reserve-active pulse">+1 Reservation</span>
+        <span class="btn-inner--icon d-block"><i class="fas fa-history fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">History</span>
+      </a>
+      <a href="../single-team(active)/reviews.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-star fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Reviews</span>
+      </a>
+      <a href="../single-team(active)/profile.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-user-alt fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Profile</span>
+      </a>
+      <a href="../../../damier-spaces-website/pages/users-hosts/login.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-sign-out-alt fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">Logout</span>
+      </a>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="main-content position-relative">
+    <!-- Main nav -->
+    <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-primary navbar-border" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand + Toggler (for mobile devices) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- User's navbar -->
+        <div class="navbar-user d-lg-none ml-auto">
+          <ul class="navbar-nav flex-row align-items-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="fa fa-bars"></i></a>
+            </li>
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link pr-lg-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="../../assets/img/web-dev.png">
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow mobile-drop">
+                <a href="../single-team(active)/profile.html" class="dropdown-item">
+                  <i class="fa fa-user"></i>
+                  <span>My profile</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="../../../damier-spaces-website/pages/users-hosts/login.html" class="dropdown-item">
+                  <i class="fa fa-sign-out-alt"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Navbar nav -->
+        <div class="collapse navbar-collapse navbar-collapse-fade" id="navbar-main-collapse">
+          <ul class="navbar-nav align-items-lg-center">
+            <!-- Overview  -->
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../single-team(active)/dashboard.html"> Dashboard </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../single-team(active)/packages.html"> Packages </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../single-team(active)/reviews.html"> Reviews </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../single-team(active)/spaces.html"> Spaces </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../single-team(active)/history.html"> History </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../single-team(active)/profile.html"> Profile </a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="../../../damier-spaces-website/pages/users-hosts/login.html"> Logout </a>
+            </li>
+            <li class="border-top opacity-2 my-2"></li>
+          </ul><!-- Right menu -->
+          <ul class="navbar-nav ml-lg-auto align-items-center d-none d-lg-flex">
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="fa fa-bars"></i></a>
+            </li>
+            <li class="nav-item dropdown dropdown-animate">
+              <a class="nav-link pr-lg-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media media-pill align-items-center">
+                  <span class="avatar rounded-circle">
+                    <img alt="Image placeholder" src="../../assets/img/web-dev.png">
+                  </span>
+                  <div class="ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">Bosun Jones</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow">
+                <a href="../single-team(active)/profile.html" class="dropdown-item">
+                  <i class="fa fa-user"></i>
+                  <span>My profile</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="../../../damier-spaces-website/pages/users-hosts/login.html" class="dropdown-item">
+                  <i class="fa fa-sign-out-alt"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Page content -->
+    <div class="page-content">
+      <!-- Page title -->
+      <div class="page-title">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-6 d-flex align-items-center justify-content-between justify-content-md-start mb-3 mb-md-0">
+            <!-- Page title + Go Back button -->
+            <div class="d-inline-block">
+              <h5 class="h4 d-inline-block font-weight-400 mb-0 text-white">Product</h5>
+            </div>
+            <!-- Additional info -->
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-between justify-content-md-end">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-success save-space">
+                <span class="text-dark"><i data-feather="heart"></i> Save Space</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <!-- Product title -->
+              <h5 class="h4">Dedicated Desk</h5>
+              <h6 class="text-sm">Maryland Location - 360, Ikorodu Road, Maryland, Lagos, Nigeria</h6>
+              <!-- Rating -->
+              <div class="row align-items-center">
+                <div class="col-sm-6">
+                  <ul>
+                    <li class="d-inline"><span class="space-rating">3.5 <i class="fas fa-star"></i></span></li>
+                    <li class="d-inline"><a href="#reviews">- 2 Reviews</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 text-sm-right">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                      <span class="status space"><i class="fas fa-circle open"></i> Open</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <span class="status space" data-toggle="tooltip" data-placement="top" title="Space Capacity"><i data-feather="user"></i> 20</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Description -->
+              <div class="py-4 my-4 border-top border-bottom">
+                <h6 class="text-sm">Description:</h6>
+                <p class="text-sm mb-0">
+                  For over 5 years, we pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers. To make the world’s spaces connected, accessible and productive.
+                </p>
+              </div>
+
+              <!-- Amenities -->
+              <div class="my-4 border-bottom space-amenities">
+                <h6 class="text-sm">Amenities:</h6>
+                <ul>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                  <li><img src="../../assets/img/wifi-dark.svg" alt=""> High Speed Wifi</li>
+                </ul>
+              </div>
+
+              <hr>
+
+              <!-- Amenities -->
+              <div class="my-4 border-bottom space-amenities">
+                <h6 class="text-sm">Location on Map:</h6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7414289359735!2d3.4633814152567544!3d6.427256795349856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf532d6d65efd%3A0x99ed959322e9b2ee!2sThe%20English%20Manner%20Nigeria!5e0!3m2!1sen!2sng!4v1584257946930!5m2!1sen!2sng" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+
+
+              <!-- Amenities -->
+              <div class="my-4 border-bottom space-amenities" id="reviews">
+                <h6 class="text-sm border-bottom pb-2 mb-4 mt-5">Reviews:</h6>
+                
+                <!-- Reviews -->
+                <div class="review-comment">
+                  <div class="top-part">
+                    <div class="img-holder">
+                      <img src="../../assets/img/web-dev.png" alt="">
+                    </div>
+                    <div class="name-star">
+                      <h5>Bosun Jones</h5>
+                      <ul>
+                        <li class="d-inline"><span class="space-rating">3.5 <i class="fas fa-star"></i></span> - Rated</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="comments-review">
+                    <p>For over 5 years, we pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers. To make the world’s spaces connected, accessible and productive.</p>
+                  </div>
+                </div>
+
+                <!-- Reviews -->
+                <div class="review-comment">
+                  <div class="top-part">
+                    <div class="img-holder">
+                      <img src="../../assets/img/web-dev.png" alt="">
+                    </div>
+                    <div class="name-star">
+                      <h5>Bosun Jones</h5>
+                      <ul>
+                        <li class="d-inline"><span class="space-rating">3.5 <i class="fas fa-star"></i></span> - Rated</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="comments-review">
+                    <p>For over 5 years, we pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers. To make the world’s spaces connected, accessible and productive.</p>
+                  </div>
+                </div>
+
+                <h5>Leave a Review</h5>
+                <div class="">
+                  <div class="card-body review-rating">
+                    <p class="text-center mb-2">Your Ratings:</p>
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-secondary active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked><br>1 Star
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"><br>2 Stars
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"><br>3 Stars
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option4" autocomplete="off"><br>4 Stars
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option5" autocomplete="off"><br>5 Stars
+                      </label>
+                    </div>
+                  </div>
+                  <form action="">
+                    <h6>Your Comments:</h6>
+                    <div class="form-group">
+                      <textarea name="" id="input" class="form-control" rows="5" required="required" placeholder="Let us know what you think..."></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="button" class="btn btn-fill">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-sm-6 mb-4 mb-sm-0">
+                  <span class="d-block h5 mb-0">You have 3 more slots</span>
+                  <a href="#" class="text-sm">You can Check-In to this space</a>
+                </div>
+                <div class="col-sm-6 text-sm-right">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-fill">Check-In</button>
+                    <button type="button" class="btn btn-sm btn-outline">Reserve</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Space images -->
+          <div class="card">
+            <div class="card-body space-gallery">
+              <a href="../../assets/img/space1.jpg" data-fancybox="product">
+                <img alt="Image placeholder" src="../../assets/img/space1.jpg" class="img-fluid">
+              </a>
+              <div class="row mt-4">
+                <div class="col-4">
+                  <div class="p-3 border rounded">
+                    <a href="../../assets/img/space1.jpg" class="stretched-link" data-fancybox="product">
+                      <img alt="Image placeholder" src="../../assets/img/space1.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="p-3 border rounded">
+                    <a href="../../assets/img/space1.jpg" class="stretched-link" data-fancybox="product">
+                      <img alt="Image placeholder" src="../../assets/img/space1.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="p-3 border rounded">
+                    <a href="../../assets/img/space1.jpg" class="stretched-link" data-fancybox="product">
+                      <img alt="Image placeholder" src="../../assets/img/space1.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Space Feature Category -->
+          <div class="card">
+            <div class="card-header border-0">
+              <h6 class="mb-0">Space Category Feature <span class="float-right badge badge-primary p-2">Flexi High</span></h6>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-items-center">
+                <tbody class="list h5">
+                  <tr>
+                    <th>Feature</th>
+                    <td class="text-right">Value</td>
+                  </tr>
+                  <tr>
+                    <th>Feature</th>
+                    <td class="text-right">Value</td>
+                  </tr>
+                  <tr>
+                    <th>Feature</th>
+                    <td class="text-right">Value</td>
+                  </tr>
+                  <tr>
+                    <th>Feature</th>
+                    <td class="text-right">Value</td>
+                  </tr>
+                  <tr>
+                    <th>Feature</th>
+                    <td class="text-right">Value</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Related -->
+          <div class="card">
+            <div class="card-header border-0">
+              <h6 class="mb-0">Related Spaces</h6>
+            </div>
+            <div class="related-spaces">
+              <div class="card-body">
+                <!-- Space Card Starts -->
+                  <div class="col-lg-12">
+                    <div class="space-card">
+                      <!-- Head -->
+                      <div class="head">
+                        <span class="status"><i class="fas fa-circle open"></i> Open</span>
+                        <span class="save-unsave"><i class="far fa-heart" data-toggle="tooltip" data-placement="top" title="Add to Saved Spaces"></i></span>
+                        <div class="img-holder">
+                          <img src="../../assets/img/space1.jpg" alt="">
+                        </div>
+
+                        <div class="metas">
+                          <div class="row">
+                            <div class="col-8">
+                              <ul>
+                                <li data-toggle="tooltip" data-placement="top" title="High Speed Wifi"><img src="../../assets/img/wifi.svg" alt=""></li>
+                                <li data-toggle="tooltip" data-placement="top" title="Free Coffee"><img src="../../assets/img/coffee.svg" alt=""></li>
+                                <li data-toggle="tooltip" data-placement="top" title="Printer"><img src="../../assets/img/print.svg" alt=""></li>
+                                <li data-toggle="tooltip" data-placement="top" title="More Amenities"><img src="../../assets/img/more.svg" alt=""></li>
+                              </ul>
+                            </div>
+                            <div class="col-4 text-right">
+                              <span class="user-count" data-toggle="tooltip" data-placement="top" title="Space Capacity"><i data-feather="user"></i> 12</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="single-space.html"><div class="overlay"></div></a>
+                      </div>
+                      <!-- Base -->
+                      <div class="base">
+                        <h5><a href="single-space.html">Meeting Room</a></h5>
+                        <p>360 Ikorodu Rd, Maryland, Lagos</p>
+                        <ul>
+                          <li><span class="space-rating">3.5 <i class="fas fa-star"></i></span></li>
+                          <li>- 0 Reviews</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Space Card Ends -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer pt-5 pb-4 footer-light" id="footer-main">
+      <div class="row text-center text-sm-left align-items-sm-center">
+        <div class="col-sm-6">
+          <p class="text-sm mb-0">&copy; 2020 <a href="https://damierspaces.com/" class="h6 text-sm" target="_blank">Damier Spaces</a>. All rights reserved.</p>
+        </div>
+        <div class="col-sm-6 mb-md-0">
+          <ul class="nav justify-content-center justify-content-md-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-0" href="#">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Scripts -->
+<!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+<script src="../../assets/js/damier.core.js"></script>
+<!-- Damier JS -->
+<script src="../../assets/js/damier.js"></script>
+<script src="../../assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="../../assets/js/feathericons.js"></script>
+<script src="../../assets/js/sweetalert.js"></script>
+<script src="../../assets/js/damier-spaces.js"></script>
+<script>
+  document.querySelector('.save-space').onclick = function(){
+    swal("Space Saved!", "This space has been added to your saved spaces.", "success");
+  };
+</script>
+</body>
+
+</html>

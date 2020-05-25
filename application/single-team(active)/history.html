@@ -21,7 +21,7 @@
     <div class="sidenav" id="sidenav-main">
       <!-- Sidenav header -->
       <div class="sidenav-header d-flex align-items-center">
-        <a class="navbar-brand" href="../users(active)/dashboard.html">
+        <a class="navbar-brand" href="../single-team(active)/dashboard.html">
           <img src="../../assets/img/brand/white.png" class="navbar-brand-img" alt="...">
         </a>
         <div class="ml-auto">
@@ -45,9 +45,9 @@
           <div class="mt-4">
             <h5 class="mb-0 text-white">Bosun Jones</h5>
             <span class="d-block text-sm text-white opacity-8 mb-3">Web Developer</span>
-            <a href="packages.html" class="btn btn-sm btn-white btn-icon rounded-pill shadow hover-translate-y-n3">
-              <span class="btn-inner--icon"><i class="fas fa-layer-group"></i></span>
-              <span class="btn-inner--text">Subscribe Now</span>
+            <a href="my-team.html" class="btn btn-sm btn-white btn-icon rounded-pill shadow hover-translate-y-n3">
+              <span class="btn-inner--icon"><i class="fas fa-users"></i></span>
+              <span class="btn-inner--text">Team: Acme Team</span>
             </a>
           </div>
         </div>
@@ -55,7 +55,7 @@
         <!-- Actions -->
         <div class="user-side-info">
          <div class="row">
-          <div class="col-7">
+          <div class="col-12">
             <ul>
               <li>
                 <span>Slots left</span>
@@ -65,43 +65,33 @@
               </li>
             </ul>
           </div>
-          <div class="col-5">
-            <ul>
-              <li>
-                <span>Expires</span>
-              </li>
-              <li>
-                <small>Expired</small>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
     <!-- Application nav -->
     <div class="nav-application clearfix">
-      <a href="../users(active)/dashboard.html" class="btn btn-square text-sm">
+      <a href="../single-team(active)/dashboard.html" class="btn btn-square text-sm">
         <span class="btn-inner--icon d-block"><i class="fa fa-home fa-2x"></i></span>
         <span class="btn-inner--icon d-block pt-2">Dashboard</span>
       </a>
-      <a href="../users(active)/packages.html" class="btn btn-square text-sm">
-        <span class="btn-inner--icon d-block"><i class="fas fa-archive fa-2x"></i></span>
-        <span class="btn-inner--icon d-block pt-2">Packages</span>
+      <a href="../single-team(active)/my-team.html" class="btn btn-square text-sm">
+        <span class="btn-inner--icon d-block"><i class="fas fa-users fa-2x"></i></span>
+        <span class="btn-inner--icon d-block pt-2">My Team</span>
       </a>
-      <a href="../users(active)/spaces.html" class="btn btn-square text-sm">
+      <a href="../single-team(active)/spaces.html" class="btn btn-square text-sm">
         <span class="btn-inner--icon d-block"><i class="fas fa-couch fa-2x"></i></span>
         <span class="btn-inner--icon d-block pt-2">Spaces</span>
       </a>
-      <a href="../users(active)/history.html" class="btn btn-square text-sm active">
+      <a href="../single-team(active)/history.html" class="btn btn-square text-sm active">
         <span class="reserve-active pulse">+1 Reservation</span>
         <span class="btn-inner--icon d-block"><i class="fas fa-history fa-2x"></i></span>
         <span class="btn-inner--icon d-block pt-2">History</span>
       </a>
-      <a href="../users(active)/reviews.html" class="btn btn-square text-sm">
+      <a href="../single-team(active)/reviews.html" class="btn btn-square text-sm">
         <span class="btn-inner--icon d-block"><i class="fas fa-star fa-2x"></i></span>
         <span class="btn-inner--icon d-block pt-2">Reviews</span>
       </a>
-      <a href="../users(active)/profile.html" class="btn btn-square text-sm">
+      <a href="../single-team(active)/profile.html" class="btn btn-square text-sm">
         <span class="btn-inner--icon d-block"><i class="fas fa-user-alt fa-2x"></i></span>
         <span class="btn-inner--icon d-block pt-2">Profile</span>
       </a>
@@ -126,87 +116,6 @@
             <li class="nav-item">
               <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="fa fa-bars"></i></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link nav-link-icon" data-action="omnisearch-open" data-target="#omnisearch"><i class="fa fa-search"></i></a>
-            </li>
-            <li class="nav-item dropdown dropdown-animate">
-              <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg dropdown-menu-arrow  mobile-drop p-0">
-                <div class="py-3 px-3">
-                  <h5 class="heading h6 mb-0">Notifications</h5>
-                </div>
-                <div class="list-group list-group-flush">
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
-                      <div> 
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          Venia just opened a new working at. 2 shomolu street...
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
-                      <div> 
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-check-circle"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">Damier spaces <small class="float-right text-muted">3 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          You have successfully upgraded your package to FlexiHIGH
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago">
-                      <div> 
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">BTHub<small class="float-right text-muted">5 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          BTHub just opened a new working  at No. 2 shomolu street...
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
-                      <div>
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-exclamation-circle"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          Your reservation for a space at VeniaHUB Yaba has been declined
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
-                      <div>
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">Damier Spaces <small class="float-right text-muted">3 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          Your check-in request has been accepted at Ogba
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="py-3 text-center">
-                  <a href="../users(active)/notifications.html" class="link link-sm link--style-3">View all notifications</a>
-                </div>
-              </div>
-            </li>
             <li class="nav-item dropdown dropdown-animate">
               <a class="nav-link pr-lg-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="avatar avatar-sm rounded-circle">
@@ -214,8 +123,7 @@
                 </span>
               </a>
               <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow mobile-drop">
-                <h6 class="dropdown-header px-0">Hi, Bosun!</h6>
-                <a href="../users(active)/profile.html" class="dropdown-item">
+                <a href="../single-team(active)/profile.html" class="dropdown-item">
                   <i class="fa fa-user"></i>
                   <span>My profile</span>
                 </a>
@@ -259,87 +167,6 @@
             <li class="nav-item">
               <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="fa fa-bars"></i></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link nav-link-icon" data-action="omnisearch-open" data-target="#omnisearch"><i class="fa fa-search"></i></a>
-            </li>
-            <li class="nav-item dropdown dropdown-animate">
-              <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg dropdown-menu-arrow p-0">
-                <div class="py-3 px-3">
-                  <h5 class="heading h6 mb-0">Notifications</h5>
-                </div>
-                <div class="list-group list-group-flush">
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
-                      <div> 
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          Venia just opened a new working at. 2 shomolu street...
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
-                      <div> 
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-check-circle"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">Damier spaces <small class="float-right text-muted">3 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          You have successfully upgraded your package to FlexiHIGH
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago">
-                      <div> 
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">BTHub<small class="float-right text-muted">5 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          BTHub just opened a new working  at No. 2 shomolu street...
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
-                      <div>
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-exclamation-circle"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">VeniaHUB <small class="float-right text-muted">2 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          Your reservation for a space at VeniaHUB Yaba has been declined
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
-                      <div>
-                        <span class="btn-inner--icon d-block wine"><i class="fas fa-bell"></i></span>
-                      </div>
-                      <div class="flex-fill ml-3">
-                        <div class="h6 text-sm mb-0">Damier Spaces <small class="float-right text-muted">3 hrs ago</small></div>
-                        <p class="text-sm lh-140 mb-0">
-                          Your check-in request has been accepted at Ogba
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="py-3 text-center">
-                  <a href="../users(active)/notifications.html" class="link link-sm link--style-3">View all notifications</a>
-                </div>
-              </div>
-            </li>
             <li class="nav-item dropdown dropdown-animate">
               <a class="nav-link pr-lg-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="media media-pill align-items-center">
@@ -347,13 +174,12 @@
                     <img alt="Image placeholder" src="../../assets/img/web-dev.png">
                   </span>
                   <div class="ml-2 d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">Workstation NG</span>
+                    <span class="mb-0 text-sm  font-weight-bold">Bosun Jones</span>
                   </div>
                 </div>
               </a>
               <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow">
-                <h6 class="dropdown-header px-0">Hi Bosun!</h6>
-                <a href="../users(active)/profile.html" class="dropdown-item">
+                <a href="../single-team(active)/profile.html" class="dropdown-item">
                   <i class="fa fa-user"></i>
                   <span>My profile</span>
                 </a>
@@ -446,9 +272,6 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Reservation</a>
-                </li>
-                 <li class="nav-item">
-                  <a class="nav-link" id="subs-tab" data-toggle="tab" href="#subs" role="tab" aria-controls="subs" aria-selected="false">Subscription</a>
                 </li>
               </ul>
 
@@ -557,38 +380,6 @@
                   </table>
 
 
-                </div>
-                <div class="tab-pane fade" id="subs" role="tabpanel" aria-labelledby="subs-tab">
-                    <table class="table table-hover table-inverse table-responsive">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>PACKAGE</th>
-                        <th>DATE</th>
-                        <th>TIME</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Flexi- Low</td>
-                        <td>22/01/2020</td>
-                        <td>8:45:00 PM</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Flexi - Low</td>
-                        <td>22/01/2020</td>
-                        <td>8:45:00 PM</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Flexi - Low</td>
-                        <td>22/01/2020</td>
-                        <td>8:45:00 PM</td>
-                      </tr>
-                    </tbody>
-                  </table>
                 </div>
               </div>
 
